@@ -58,7 +58,7 @@ class 마지막날짜{
         System.out.println("월을 입력하시오.");
         month = scanner.nextInt();
 
-        //윤년 계산(나중에)
+        //윤년 계산(다음에)
 
         String title = " ### 마지막 날짜 ### \n";
         String answer = String.format(
