@@ -1,4 +1,5 @@
 package 입문;
+
 /*
 마지막 날짜 문제
 
@@ -39,38 +40,16 @@ package 입문;
 ******************************************************************
 */
 
-import java.util.Scanner;
-
-class 마지막날짜{
+public class 마지막날짜{
     public static void main(String[] args) {
         마지막날짜 solution = new 마지막날짜();
         System.out.println(solution.solution());
     }
 
     public String solution(){
-        int year = 0;
-        int month = 0;
-        int day = 0;
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("년을 입력하시오.");
-        year = scanner.nextInt();
-        System.out.println("월을 입력하시오.");
-        month = scanner.nextInt();
-
-        //윤년 계산(다음에)
-
         String title = " ### 마지막 날짜 ### \n";
-        String answer = String.format(
-        "******************************************************************\n"
-        +"년 월 일\n"
-        +"******************************************************************\n"
-        +"2000 2 28\n"
-        +"******************************************************************,\n"
-        ,
-        year, month, day);
-        
-        scanner.close();
+        String answer = "";
+
         return title + answer;
     }
 }
